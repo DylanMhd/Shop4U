@@ -1,0 +1,156 @@
+
+.banner {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.banner p {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -7px;
+}
+.banner p span {
+  color: rgb(255, 0, 0);
+}
+
+/* panier */
+.fixeDroite {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  z-index: 5;
+  background-color: rgba(255, 57, 57, 0.704);
+  border: #000 2px solid;
+  border-radius: 50%;
+}
+.bi{
+  font-size: xx-large;
+  color: black;
+}
+
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(1, 1, 1, 0.743);
+}
+
+.modal-content {
+    position: relative;
+    bottom: 0px;
+    background-color: #000000;
+    width: 30%;
+    height: auto;
+    -webkit-animation-name: animateleft;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animateleft;
+    animation-duration: 0.4s;
+}
+  
+  @-webkit-keyframes animateleft {
+    from {left:50%; opacity:0} 
+    to {left:0; opacity:1}
+  }
+  
+  @keyframes animateleft {
+    from {left:50%; opacity:0} 
+    to {left:0; opacity:1}
+  }
+  .close,.closes,.remove {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus,.closes:hover,
+  .closes:focus,.remove:hover,
+  .remove:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #000;
+    color: white;
+  }
+  
+  .modal-body {
+    padding: 2px 16px;
+  }
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #000;
+    color: white;
+    position: relative;
+    top: 86%;
+  }
+  .shadow-white{
+    box-shadow: white 2px 3px 7px 1px;
+  }
+  .additem,.removeitems {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .additem-content,.remove-content {
+    position: relative;
+    top: 100px;
+    left: 30%;
+    background-color: #fefefe;
+    width: 40%;
+    height: auto;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+  .additem-header,.remove-header {
+    padding: 2px 16px;
+    background-color:  #26cb58;
+    color: white;
+  }
+  .additem-body,.remove-body {
+    padding: 2px 16px;
+  }
+  
+  .additem-footer,.remove-footer {
+    padding: 2px 16px;
+    background-color: #26cb58;
+    color: white;
+    position: relative;
+    top: 86%;
+  }
+  .remove-header,.remove-footer{
+    background-color: #a41f1f;
+  }
+  @-webkit-keyframes animatetop {
+    from {top:0; opacity:0} 
+    to {top:100px; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:0; opacity:0} 
+    to {top:100px; opacity:1}
+  }
